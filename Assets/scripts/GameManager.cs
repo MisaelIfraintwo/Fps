@@ -16,6 +16,11 @@ public class GameManager : MonoBehaviour
         else { Destroy(gameObject); }
 
     }
+    public void UnlockCursor()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = false;
+    }
     public void SceneChange(int Indexscene) 
     {
         SceneManager.LoadScene(Indexscene);

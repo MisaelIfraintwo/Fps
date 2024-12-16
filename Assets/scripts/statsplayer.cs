@@ -34,6 +34,7 @@ public class statsplayer : MonoBehaviour
     }
     private void Morir() 
     {
+        gameManager.UnlockCursor();
         gameManager.SceneChange(0);
         Destroy(gameObject);
            

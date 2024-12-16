@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb7dbae13f48ae468d0a34188645749, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 4
+  duration: 2.5
   "da\xF1o": 1
 --- !u!108 &3066796783665904376
 Light:

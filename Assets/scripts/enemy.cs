@@ -7,6 +7,7 @@ public class enemy : MonoBehaviour
 
     public Transform jugador;
 
+
     private NavMeshAgent agent;
 
     public void Start()
