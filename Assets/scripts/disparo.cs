@@ -22,11 +22,15 @@ public class disparo : MonoBehaviour
 
     private void shootear()
     {
-        GameObject Bala = Instantiate(bala, shoot.position, shoot.rotation);
+        
+
+        Vector3 direccionshoot = Camera.main.transform.forward;
+
+        GameObject Bala = Instantiate(bala, shoot.position, Quaternion.LookRotation(direccionshoot));
 
         Rigidbody rb = Bala.GetComponent<Rigidbody>();
 
-        rb.AddForce(shoot.forward * fuerzaShoot, ForceMode.Impulse);
+        rb.AddForce(direccionshoot* fuerzaShoot, ForceMode.Impulse);
 
         tiempoultDisp = Time.time;
     }
